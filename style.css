@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .title {
@@ -252,7 +253,8 @@ audio {
   top: 0;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(to right bottom, white, #b5f5ec 100%);
+  /* background: linear-gradient(to right bottom, white, #b5f5ec 100%); */
+  background: url("./img/bg_bricks.png");
 }
 
 footer {
@@ -261,10 +263,12 @@ footer {
   margin-top: 50px;
   border-radius: 10px 10px 0 0;
   box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: auto;
   /* max-width: 1440px; */
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+  text-align: center;
 }
 
 .footer-content {
@@ -293,7 +297,8 @@ footer {
   content: "";
   position: absolute;
   bottom: -5px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 40px;
   height: 2px;
   background: linear-gradient(to right, #1379c2, #13c2c2);
@@ -303,6 +308,7 @@ footer {
   color: #666;
   line-height: 1.6;
   margin: 0;
+  text-align: center;
 }
 
 .footer-section a {
